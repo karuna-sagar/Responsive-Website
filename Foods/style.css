@@ -83,6 +83,19 @@ html{
     left: -1rem;
     transform: skewY(45deg);
     transform-origin: right;
+    box-shadow: -0.1rem -0.1rem -0.1rem #000;
+}
+.card::before{
+    content: '';
+    height: 100%;
+    width: 1rem;
+    background-color: #817822;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+    box-shadow: -0.1rem -0.1rem -0.1rem #000;
 }
 .card-img{
     width: 100%;
