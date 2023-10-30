@@ -55,17 +55,56 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 .cards-container{
     display: flex;
     justify-content: space-evenly;
 }
 .card{
-    width: 28rem;
-    
+    width: 25rem;    
     background-color: #a79a2d;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;
+    position: relative;
+}
+
+.card::before{
+    content: '';
+    height: 100%;
+    width: 1rem;
+    background-color: #817822;
+    position: absolute;
 }
 .card-img{
     width: 100%;
+}
+
+.card-name{
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #111;
+    margin: 1.5rem 0;
+    text-shadow: 0.10rem 0.10rem 0.10rem #000;
+}
+
+.card-btn{
+    width: 60%;
+    background-color: #111;
+    color: #888;
+    border-radius: 4.5rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    border: none;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    box-shadow: -0.2rem -0.2rem --0.2rem #000;
 }
