@@ -1,133 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Nunito',sans-serif;
-    font-weight: 400;
-}
-
-html{
-    font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
-.section-1{
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.section-heading{
-    color: #fff;
-    font-size: 10rem;
-    font-weight: 900;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 0.5rem;
-    text-shadow: 0.3rem 0.3rem 0.3rem #000;
-}
-.section-1-icons i{
-    font-size: 18rem;
-    color: #a79a2d;
-    position: absolute;
-    transform: translate(-50%,-50%) scale(0);
-    text-shadow: 0.2rem 0.2rem 0.2rem #000;
-    transition: transform 0.3s;
+html {
+  font-size: 62.5%;
 }
 
-.section-1-icons i.change{
-    transform: translate(-50%,-50%) scale(1);
-    transition: transform 0.3s 0.3s;
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-heading {
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+.section-1-icons i {
+  font-size: 18rem;
+  color: #a79a2d;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  transition: transform 0.3s;
 }
 
-
-.section-2{
-    width: 100%;
-    height: 100vh;
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5rem 0;
-}
-.cards-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-.card{
-    width: 25rem;    
-    background-color: #a79a2d;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1rem 1rem 1rem #000;
-    position: relative;
-    transform: rotateY(20deg)skew(-2deg);
-    transition: transform 0.5s,box-shadow 0.5s;
+.section-1-icons i.change {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.3s;
 }
 
-.card:hover{
-    transform: rotateY(20deg)skew(-2deg) translateY(-3rem);
-    box-shadow: 2rem 2rem 2rem #000;
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0;
 }
-.card::before{
-    content: '';
-    height: 100%;
-    width: 1rem;
-    background-color: #817822;
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    transform: skewY(45deg);
-    transform-origin: right;
-    box-shadow: -0.1rem -0.1rem -0.1rem #000;
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
 }
-.card::after{
-    content: '';
-    height: 1rem;
-    width: 100%;
-    background-color: #8f8317;
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    transform: skewX(45deg);
-    transform-origin:bottom;
-    box-shadow: -0.1rem -0.1rem -0.1rem #000;
-}
-.card-img{
-    width: 100%;
+.card {
+  width: 25rem;
+  background-color: #a79a2d;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem #000;
+  position: relative;
+  transform: rotateY(20deg) skew(-2deg);
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.card-name{
-    font-size: 1.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: #111;
-    margin: 1.5rem 0;
-    text-shadow: 0.10rem 0.10rem 0.10rem #000;
+.card:hover {
+  transform: rotateY(20deg) skew(-2deg) translateY(-3rem);
+  box-shadow: 2rem 2rem 2rem #000;
+}
+.card::before {
+  content: "";
+  height: 100%;
+  width: 1rem;
+  background-color: #817822;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  transform: skewY(45deg);
+  transform-origin: right;
+  box-shadow: -0.1rem -0.1rem -0.1rem #000;
+}
+.card::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #8f8317;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+  box-shadow: -0.1rem -0.1rem -0.1rem #000;
+}
+.card-img {
+  width: 100%;
 }
 
-.card-btn{
-    width: 60%;
-    background-color: #111;
-    color: #888;
-    border-radius: 4.5rem;
-    font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: 0.1rem;
-    text-transform: capitalize;
-    border: none;
-    padding: 0.2rem 0;
-    cursor: pointer;
-    box-shadow: -0.2rem -0.2rem --0.2rem #000;
+.card-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #111;
+  margin: 1.5rem 0;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+}
+
+.card-btn {
+  width: 60%;
+  background-color: #111;
+  color: #888;
+  border-radius: 4.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  border: none;
+  padding: 0.2rem 0;
+  cursor: pointer;
+  box-shadow: -0.2rem -0.2rem --0.2rem #000;
 }
