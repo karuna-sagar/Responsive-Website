@@ -111,16 +111,52 @@ body {
 /* Section 1  end*/
 /* Section 2  start*/
 .section-2 {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.section-heading {
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.1;
+  color: #999;
+  text-shadow: 2rem 2rem 4rem #aaa;
+}
 
 .customer-image {
-  width: 10vw;
-  height: 10vw;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
 }
+
+.customer {
+  width: 35rem;
+  height: 50rem;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 2rem #ddd, -1rem -1rem 2rem #eee;
+}
+
+.customer:first-child {
+  align-self: flex-end;
+}
+.customer:last-child {
+  align-self: flex-start;
+}
+
+.customers-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+
 /* Section 2  end*/
